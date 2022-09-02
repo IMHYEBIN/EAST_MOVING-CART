@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비전 설비 일상 점검표</title>
+  <link href="css/vision daily checker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <section>
+    <article style="margin: 2px; padding: 2px; border: 2px;">
+      <table>
+        <thead>
+          <colgroup>
+            <col style="width: 120px;">
+            <col style="width: 140px;">
+            <col style="width: 320px;">
+            <col style="width: 100px;">
+            <col style="width: 80px;">
+            <col style="width: 70px;">
+            <col style="width: 70px;">
+            <col style="width: 150px;">
+          <tr>
+            <th bgcolor="#B2CCFF">차 종</th>
+            <th></th>
+            <th colspan="5" rowspan="2"><h2>비전 설비 일일 점검표</h2></th>
+            <th rowspan="2"><input type="submit" value="저장하기"></th>
+          </tr>
+         
+          <tr>
+            <th bgcolor="#B2CCFF">호기 구분</th>
+            <td>
+              <label for="machineNo">
+              </label>
+              <select id="machineNo">
+              <option value="1호기" selected>검사1호기</option>
+              </select>
+            </td>
+          </tr>
+          <tr bgcolor="#B2EBF4">
+            <th>공 정 명</th>
+            <th>점 검 분 류</th>
+            <th>체 크 항 목</th>
+            <th>점 검 주 기</th>
+            <th>점 검 도 구</th>
+            <th>합 격</th>
+            <th>불 합 격</th>
+            <th>특 이 사 항</th>
+          </tr>
+          <tr>
+            <th bgcolor="#D4F4FA" rowspan="10">비전 검사</th>
+            <th>SENSOR</th>
+            <td><p>동작부 또는 감지부 SENSOR의 LED가 점등이 되어서<br>작동 준비 상태가 되었는가?</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="sensorcheck" id="sensor_ok"><label for="sensor_ok"></label></td>
+            <td><input type="radio" name="sensorcheck" id="sensor_ng"><label for="sensor_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <th rowspan="2"><span class="redtext">Lens</span></th>
+            <td><span class="redtext">렌즈 지근거리에 판독에 방해가 되는 물체가 있는가?</span></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="lens_check1" id="lens1_ok"><label for="lens1_ok"></label></td>
+            <td><input type="radio" name="lens_check1" id="lens1_ng"><label for="lens1_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <td><span class="redtext"><p>렌즈에 이물이 묻어 있지는 않은가?</p></span></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="lens_check2" id="lens2_ok"><label for="lens2_ok"></label></td>
+            <td><input type="radio" name="lens_check2" id="lens2_ng"><label for="lens2_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+            <tr>
+            <th rowspan="2">제어부</th>
+            <td><p>컴퓨터가 정상적으로 작동이 되는가?</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="comcheck" id="com_ok"><label for="com_ok"></label></td>
+            <td><input type="radio" name="comcheck" id="com_ng"><label for="com_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <td><p>PLC 구동시 램프가 제대로 점멸이 되는가?</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="plccheck" id="com_ok"><label for="com_ok"></label></td>
+            <td><input type="radio" name="plccheck" id="com_ng"><label for="com_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <th rowspan="3">실린더 작동부</th>
+            <td><p>실린더 입력에 팔요한 압력이 정확하게 입력이 되는가?</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="silinderP" id="silinderP_ok"><label for="silinderP_ok"></label></td>
+            <td><input type="radio" name="silinderP" id="silinderP_ng"><label for="silinderP_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <td><p>원활하게 작동이 되는가?<br>(스무스하게 반복운동이 되는지 확인)</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="silinderW" id="silinderW_ok"><label for="silinderW_ok"></label></td>
+            <td><input type="radio" name="silinderW" id="silinderW_ng"><label for="silinderW_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <td><p>실린더 작동 구간내 원활하게 정상작동을 하는가?</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="silinderC" id="silinderC_ok"><label for="silinderC_ok"></label></td>
+            <td><input type="radio" name="silinderC" id="silinderC_ng"><label for="silinderC_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <th>MASTER SAMPLE</th>
+            <td><p>Master Sample 체크 여부<br>(Power on 이후/장시간 비가동 이후:30분 이후)</p></td>
+            <td>일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="masterCheck1" id="masterCheck1_ok"><label for="masterCheck1_ok"></label></td>
+            <td><input type="radio" name="masterCheck1" id="masterCheck1_ng"><label for="masterCheck1_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          <tr>
+            <th><span class="redtext">제물대</span></th>
+            <td><span class="redtext">제물대(컨베이어벨트,정반,유리대 등)청정도 관리<br>※비전설비의 오판단 방지</span></td>
+            <th>수시/일상</td>
+            <td>육안</td>
+            <td><input type="radio" name="holdercheck1" id="holdercheck1_ok"><label for="holdercheck1_ok"></label></td>
+            <td><input type="radio" name="holdercheck1" id="holdercheck1_ng"><label for="holdercheck1_ng"></label></td>
+            <td><input type="text" size="14" placeholder="불합격 시 증상 기재"></td>
+          </tr>
+          </colgroup>
+        </thead>
+      </table>
+    </article>
+    <article>
+      <thead>
+        <table>
+          <tr style="height: 50px;">
+            <th colspan="29"><h2>비전 설비 점검 내역</h2></h2></th>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <th bgcolor="#B2CCFF" style="width: 120px;">조회기간</th>
+            <th style="width: 150px;"><input type="month"></th>
+            <th bgcolor="#B2CCFF" colspan="7">공 정 명</th>
+            <td colspan="7">비전 검사</td>
+            <th bgcolor="#B2CCFF" colspan="8">호기 구분</th>
+            <td colspan="9">
+              <label for="machineNo">
+              </label>
+              <select id="machineNo">
+                <option value="1호기" selected>검사1호기</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2" bgcolor="#B2EBF4">공정명</th>
+            <th rowspan="2" bgcolor="#B2EBF4">호기구분</td>
+            <th colspan="31" bgcolor="#B2EBF4">일자</td>
+          </tr>
+          <tr>
+            <th>01</th>
+            <th>02</th>
+            <th>03</th>
+            <th>04</th>
+            <th>05</th>
+            <th>06</th>
+            <th>07</th>
+            <th>08</th>
+            <th>09</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+            <th>19</th>
+            <th>20</th>
+            <th>21</th>
+            <th>22</th>
+            <th>23</th>
+            <th>24</th>
+            <th>25</th>
+            <th>26</th>
+            <th>27</th>
+            <th>28</th>
+            <th>29</th>
+            <th>30</th>
+            <th>31</th>
+          </tr>
+          <tr>
+            <th bgcolor="#D4F4FA">비전검사</th>
+            <th>검사1호기</th>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+            <td>○</td>
+          </tr>
+        </table>
+      </thead>
+    </article>
+  </section>
+</body>
+</html>

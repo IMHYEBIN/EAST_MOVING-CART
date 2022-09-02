@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body{
+    font-size: 70%;
+    text-align: center;
+}
+table, th, td, tfoot{
+    padding: 0px;
+    margin:  0px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th,td,tfoot{
+    padding:10px 20px;
+}
+section{
+    width:1900px;						/*화면 구성 크기 (기본구성으로 인하여 고의로 pix)*/
+    margin: auto;	
+}
+h3{
+    text-align: right;
+    font-size:1.2em;
+}
+h4 {
+    font-size:1em;
+}
+p {
+    line-height:20px;
+    font-size:12px;
+}
+article{ 								/* 화면 구성 */
+    float:left;							/*article 단위 화면 구성*/
+    width:900px;						
+    height:auto;
+    margin:2px;
+    padding:5px;	
+    border:1px solid #ccc;
+}
+.greentext{
+    font-size: large;
+    color: rgb(0, 122, 0)
+}
+.redtext{
+    font-size: large;
+    color: rgb(255,0,0)
+}
+.accenttext{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(74, 86, 255)
+}
+.accent{
+    font-size: large;
+    font-weight: bold;
+}
+.strong{
+    font-size: 13px;
+    font-weight: bolder;
+}
+/* footer {
+    clear:left;
+    width:99%;
+    height:50px;
+    padding: 0px;
+    background-color:#222;							추후 사용 여부에 따른 주석처리
+}
+footer > p {
+    color:#fff;
+    font-size:0.9em;
+    text-align: center;
+    line-height:50px;
+} */

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.main-table {
+   border:1px solid #aaa;
+   border-collapse: collapse;
+   white-space: nowrap; 
+}
+
+.main-table td, .main-table th {
+   border: 1px solid #aaa;
+   width: 80px; 
+}
+
+.main-table thead th {
+   left: 0;
+}
+
+.main-container {
+   position:sticky; 
+   width: 400px; 
+   height: 150px; 
+   overflow: auto; 
+}

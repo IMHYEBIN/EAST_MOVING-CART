@@ -1,0 +1,32 @@
+body{
+    font-size: 100%;
+}
+
+table, th, td, tfoot{
+    padding: 1px;
+    margin:  1px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+}
+.greentext{
+    font-size: large;
+    color: rgb(0, 122, 0)
+}
+.redtext{
+    font-size: large;
+    color: rgb(255,0,0)
+}
+.accenttext{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(74, 86, 255)
+}
+.strong{
+    font-size: large;
+    font-weight: bold;
+}
+.accent{
+    font-size: large;
+    font-weight: bold;
+}

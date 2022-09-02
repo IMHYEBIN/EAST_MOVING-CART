@@ -1,0 +1,104 @@
+@charset "UTF-8";
+body{
+    font-size: 80%;
+    text-align: center;
+}
+table, th, td, tfoot{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin:  0px;
+    border: 1px solid rgb(165, 165, 165);
+    border-collapse: collapse;
+}
+th, td, tfoot {
+    height: auto;
+}
+section{
+    width: auto;
+    margin: auto;	
+}
+h1{
+    text-align : center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+h2{
+    text-align : center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    font-size:1.2em;
+}
+h4 {
+    font-size:1em;
+    text-align: center;
+
+}
+p {
+    margin-left: 5px; /* 1 */         /*들여서 내어쓰기*/
+    text-align: left;
+    line-height:14px;
+    font-size:12px;    
+}
+.in { 
+    text-indent: 20px;   /*들여쓰기 */
+ }
+
+.out {
+    text-indent: -20px;  /*내어쓰기*/
+}
+.hybrid {
+     margin-left: 10px; /* 1 */         /*들여서 내어쓰기*/
+     text-indent: -10px; /* 2 */
+    }
+
+
+    
+
+
+article{ 								/* 화면 구성 */
+    float:left;							/*article 단위 화면 구성*/
+    width:auto;						
+    height:auto;
+    margin:2px;
+    padding:5px;	
+    border:1px solid #ccc;
+}
+.greentext{
+    font-size: large;
+    color: rgb(0, 122, 0)
+}
+.redtext{
+    font-weight: bold;
+    color: rgb(255,0,0)
+}
+.accenttext{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(74, 86, 255)
+}
+.strong{
+    font-size: 16px;
+    font-weight: bold;
+}
+.accent{
+    font-size: large;
+    font-weight: bold;
+}
+/* footer {
+    clear:left;
+    width:99%;
+    height:50px;
+    padding: 0px;
+    background-color:#222;							추후 사용 여부에 따른 주석처리
+}
+footer > p {
+    color:#fff;
+    font-size:0.9em;
+    text-align: center;
+    line-height:50px;
+} */

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@media screen {
+}
+
+.red_color {
+    background-color: #0080FF;
+    color: white;
+}
+
+.whitered_color {
+    background-color: rgb(239,240,242);
+}
+
+.greyred_color {
+    background-color: rgb(226,230,254);
+}
+
+.grey_color {
+    background-color: rgb(244, 242, 244);
+}
+
+table,
+th,
+td,
+tfoot {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 4px;
+    border: 1px solid rgb(165, 165, 165);
+    border-collapse: collapse;
+}
+
+td,
+th {
+    min-width: 50px;
+}
+
+article {
+    /* 화면 구성 */
+    float: left; /*article 단위 화면 구성*/
+    width: 55%;
+    height: auto;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid rgb(90, 90, 90);
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+.fix {
+    position: sticky;
+    left: 0;
+}
+
+.in {
+    text-indent: 20px; /*들여쓰기 */
+}
+
+.out {
+    text-indent: -20px; /*내어쓰기*/
+}
+
+.hybrid {
+    margin-left: 20px; /* 1 */ /*들여서 내어쓰기*/
+    text-indent: -20px; /* 2 */
+}
+.redT {
+    color: rgb(255, 0, 0);
+}
+.whiteT {
+    color: rgb(255, 255, 255);
+}

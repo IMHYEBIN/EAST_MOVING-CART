@@ -1,0 +1,11 @@
+body{
+    font-size: 100%;
+    text-align: center;
+}
+
+table, th, td, tfoot{
+    padding: 0px;
+    margin:  0px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
